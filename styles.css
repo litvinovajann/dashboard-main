@@ -5,6 +5,7 @@
     margin: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
+    border-spacing: 0;
 }
 
 .black {
@@ -95,7 +96,6 @@
 
 .side-menu {
     width: 382px;
-    height: 1080px;
     top: 6px;
     gap: 0px;
     opacity: 0px;
@@ -185,13 +185,96 @@
 .upcoming-appointments {
     width: 890px;
     height: 424px;
-    top: 218px;
-    left: 417px;
-    gap: 0px;
-    opacity: 0px;
     margin-bottom: 34px;
     background-color: #FFFFFF;
     border-radius: 20px;
+    padding: 18px 44px;
+}
+
+.upcoming-appointments-header {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.upcoming-appointments table {
+    width: 798px;
+    border-spacing: 0;
+}
+
+.upcoming-appointments-table-head {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+}
+
+.upcoming-appointments-table-head td {
+    padding: 20px 29px;
+}
+
+.upcoming-appointments-actions {
+    display: flex;
+    align-items: center;
+}
+
+.upcoming-appointments-actions p {
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 5px 0px rgba(185, 178, 226, 0.15);
+    background: rgb(251, 176, 59);
+    padding: 8px 15px;
+    color: #FFFFFF;
+}
+
+.upcoming-appointments .time-td {
+    color: rgb(88, 90, 91);
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+width: 20%;
+}
+
+.upcoming-appointments .name-td {
+    color: rgb(0, 0, 0);
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: center;
+width: 20%;
+}
+
+.upcoming-appointments tbody {
+    display: flex;
+    flex-direction: column;
+}
+
+.upcoming-appointments tr {
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+
+.view-more {
+color: rgb(60, 108, 164);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0%;
+text-align: left;
+text-decoration-line: underline;
+margin-left: 28px;
 }
 
 .dashboard-main {
@@ -245,16 +328,81 @@
 .appointment-requests {
     width: 515px;
     height: 809px;
-    top: 195px;
-    left: 1354px;
-    gap: 0px;
-    opacity: 0px;
     box-shadow: 0px 6px 10px 0px #B9B2E233;
     background-color: #FFFFFF;
     border-radius: 20px;
-    position: absolute;
-
+    padding: 18px 44px;
 }
+
+.appointment-requests-header {
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+.appointment-requests-block thead {
+    border-radius: 10px;
+    background: rgb(244, 248, 255);
+    color: rgb(60, 108, 164);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.appointment-requests-block__name {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.appointment-requests-block table td {
+    text-align: left;
+    padding: 20px 25px;
+    width: 65%;
+}
+
+
+.appointment-requests-block__name span:nth-child(1) {
+color: rgb(30, 30, 30);
+font-size: 12px;
+font-weight: 500;
+line-height: 150%;
+text-align: left;
+}
+
+.appointment-requests-block__name span:nth-child(2) {
+    color: rgb(88, 90, 91);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Upcoming Appointments */
+
+
+
+
 
 .upcoming-appointments {
     box-shadow: 0px 6px 10px 0px #B9B2E233;
@@ -263,7 +411,6 @@
 
 .upcoming-appointments-table-head {
     background-color: #E9F2FF80;
-    padding: 10px;
     color: #3C6CA4;
 }
 
@@ -289,7 +436,7 @@
 
 }
 
-.calendar__time {
+.calendar-time {
     width: 495px;
     height: 345px;
     border-radius: 20px;
@@ -340,7 +487,7 @@
     margin-left: 47px;
 }
 
-.time__list {
+.time-list {
     background-color: rgb(244, 248, 255);
     list-style: none;
     width: 49px;
@@ -353,7 +500,7 @@
     text-align: center;
 }
 
-.time__list__item {
+.time-list__item {
     color: rgb(60, 108, 164);
     font-weight: 500;
     font-size: 12px;
@@ -394,7 +541,7 @@
     background-color: rgb(178, 206, 239);
 }
 
-.the__note {
+.calendar-event {
     width: 135px;
     height: 55px;
     border-radius: 5px;
@@ -402,27 +549,12 @@
     position: relative;
 }
 
-.note_block {
+.calendar-event-text-block {
     padding-top: 8px;
     padding-left: 9px;
 }
 
-.first {
-    bottom: 455px;
-    left: 120px;
-}
-
-.second {
-    bottom: 419px;
-    left: 120px;
-}
-
-.thrid {
-    bottom: 380px;
-    left: 120px;
-}
-
-.name__note {
+.calendar-event-text-block-name {
     width: 76px;
     height: 10px;
     color: rgb(60, 108, 164);
@@ -431,7 +563,7 @@
     background-color: rgb(178, 206, 239);
 }
 
-.time__note {
+.calendar-event-text-block-time {
     width: 76px;
     height: 10px;
     font-size: 6px;
@@ -440,12 +572,11 @@
     background-color: rgb(178, 206, 239);
 }
 
-.Evaluation {
+.calendar-event-text-block-eval-button {
     font-size: 8px;
     font-weight: 600;
     color: rgb(49, 64, 104);
     background-color: rgb(178, 206, 239);
-    width: 44px;
     height: 10px;
     margin-top: 8px;
 }
