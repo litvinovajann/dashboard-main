@@ -492,7 +492,7 @@ text-align: left;
     border: 2px solid #00addf;
 }
 
-.calendar-month td {
+.day-digit {
     border: 2px solid transparent;
     border-radius: 50%;
     display: inline-block;
@@ -504,10 +504,13 @@ text-align: left;
     color: #314068;
 
     }
-.calendar-month .day-of-week{
+.day-of-week{
     color: #3C3C434D;
+    width: 313px;
     font-size: 13px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
 }
 .current-day {
     background: #00addf;
@@ -525,3 +528,6 @@ text-align: left;
     background: #f9f9f9;
 }
 
+.next-month {
+    display: none;
+}
