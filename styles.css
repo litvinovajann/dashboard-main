@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     font-family: "Poppins", sans-serif;
@@ -9,6 +10,7 @@
 .black {
     color: #000000;
 }
+
 .wrap-site-overlay {
     position: fixed;
     top: 0;
@@ -21,12 +23,15 @@
     background-color: rgba(0, 0, 0, 0.65);
     transition: opacity .25s ease, visibility 0s ease .25s;
 }
-.outer-wrap{
+
+.outer-wrap {
     overflow: hidden;
 }
+
 .wrap {
     position: relative;
 }
+
 .header-container {
     background-color: #314068;
     height: 93px;
@@ -37,14 +42,16 @@
     align-items: center;
     padding: 27px 57px;
 }
+
 .logo-container {
-    width: 316px; 
+    width: 316px;
     height: 36.54px;
     background-image: url('assets/header-icons/logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .user-info {
     font-size: 16px;
     font-weight: 500;
@@ -79,11 +86,13 @@
     opacity: 0px;
     margin: 0 10px;
 }
-.main-container{
+
+.main-container {
     display: flex;
     justify-content: space-between;
     background-color: #F6F7F9;
 }
+
 .side-menu {
     width: 382px;
     height: 1080px;
@@ -92,7 +101,7 @@
     opacity: 0px;
     background-color: #FFFFFF;
     box-shadow: 0px 6px 10px 0px #B9B2E233;
-    color:  #585A5B;
+    color: #585A5B;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -101,17 +110,19 @@
     padding-right: 50px;
     padding-bottom: 41px;
 }
+
 .side-menu-items {
     display: flex;
     flex-direction: column;
 }
+
 .side-menu-item {
     font-size: 22px;
     font-weight: 400;
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding:10px 12px;
+    padding: 10px 12px;
     width: 146px;
     height: 33px;
     top: 317px;
@@ -122,12 +133,12 @@
     width: 287px;
     height: 62px;
 }
-.side-menu-item svg{
-    width: 10%;
+
+.side-menu-item svg {
+    width: 26.3px;
 }
-.side-menu-item:nth-child(2) {
-    width: 90%;
-}
+
+
 .side-menu-item-icon {
     background-size: contain;
     background-repeat: no-repeat;
@@ -136,6 +147,7 @@
     height: 16px;
     margin-right: 16px;
 }
+
 .side-menu-item.active {
     color: #3C6CA4;
     font-weight: 600;
@@ -159,6 +171,7 @@
     cursor: pointer;
     width: 146px;
 }
+
 .logout-pic {
     background-image: url('assets/dashboard-icons/logout.svg');
     background-size: contain;
@@ -168,6 +181,7 @@
     height: 16px;
     margin-right: 16px;
 }
+
 .upcoming-appointments {
     width: 890px;
     height: 424px;
@@ -179,9 +193,10 @@
     background-color: #FFFFFF;
     border-radius: 20px;
 }
+
 .dashboard-main {
- width: 100%;
- padding: 30px 45px;
+    width: 100%;
+    padding: 30px 45px;
 }
 
 .dashboard-main .go-back-block {
@@ -210,15 +225,18 @@
 .dashboard-main .go-back:hover {
     cursor: pointer;
 }
-.dashbord-main-blocks{
+
+.dashbord-main-blocks {
     display: flex;
 }
+
 .dashboard-main-block-one {
     width: fit-content;
     display: flex;
     flex-direction: column;
     margin-right: 44px;
 }
+
 .dashboard-main-block-two {
     width: fit-content;
     height: 809px;
@@ -237,6 +255,7 @@
     position: absolute;
 
 }
+
 .upcoming-appointments {
     box-shadow: 0px 6px 10px 0px #B9B2E233;
     margin-bottom: 37px;
@@ -250,7 +269,7 @@
 
 
 
-.calendars-container{
+.calendars-container {
     display: flex;
 }
 
@@ -270,14 +289,14 @@
 
 }
 
-.calendar__time{
+.calendar__time {
     width: 495px;
     height: 345px;
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
-.wrap{
+.wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -285,22 +304,22 @@
     border-radius: 20px;
 }
 
-.arrow{
+.arrow {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-top: 20px;
 }
 
-.right__arrow{
+.right__arrow {
     background-color: rgb(255, 255, 255);
     margin-right: 50px;
 }
 
-.left__arrow{
+.left__arrow {
     background-color: rgb(255, 255, 255);
 }
 
-.day{
+.day {
     width: 137px;
     font-weight: 500;
     font-size: 20px;
@@ -311,17 +330,17 @@
     margin-bottom: 17px;
 }
 
-.left__arrow{
+.left__arrow {
     margin-right: 20px;
 }
 
-.time{
+.time {
     width: 40px;
     height: 254px;
     margin-left: 47px;
 }
 
-.time__list{
+.time__list {
     background-color: rgb(244, 248, 255);
     list-style: none;
     width: 49px;
@@ -334,24 +353,24 @@
     text-align: center;
 }
 
-.time__list__item{
+.time__list__item {
     color: rgb(60, 108, 164);
     font-weight: 500;
     font-size: 12px;
     height: 15px;
-    background-color:rgb(244, 248, 255);
+    background-color: rgb(244, 248, 255);
     margin-top: 15px;
 
 }
 
-.line{
+.line {
     width: 311px;
     height: 1px;
     background-color: rgb(224, 233, 244);
     border-radius: 1px;
 }
 
-.lines{
+.lines {
     background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -365,17 +384,17 @@
     margin-left: 9px;
 }
 
-.wheel{
+.wheel {
     position: relative;
     right: 48px;
     top: 72px;
 }
 
-.notes{
+.notes {
     background-color: rgb(178, 206, 239);
 }
 
-.the__note{
+.the__note {
     width: 135px;
     height: 55px;
     border-radius: 5px;
@@ -388,22 +407,22 @@
     padding-left: 9px;
 }
 
-.first{
+.first {
     bottom: 455px;
     left: 120px;
 }
 
-.second{
+.second {
     bottom: 419px;
     left: 120px;
 }
 
-.thrid{
+.thrid {
     bottom: 380px;
     left: 120px;
 }
 
-.name__note{
+.name__note {
     width: 76px;
     height: 10px;
     color: rgb(60, 108, 164);
@@ -412,7 +431,7 @@
     background-color: rgb(178, 206, 239);
 }
 
-.time__note{
+.time__note {
     width: 76px;
     height: 10px;
     font-size: 6px;
@@ -421,17 +440,17 @@
     background-color: rgb(178, 206, 239);
 }
 
-.Evaluation{
+.Evaluation {
     font-size: 8px;
     font-weight: 600;
     color: rgb(49, 64, 104);
     background-color: rgb(178, 206, 239);
     width: 44px;
-    height: 10px;  
-    margin-top: 8px; 
+    height: 10px;
+    margin-top: 8px;
 }
 
-.Wbox{
+.Wbox {
     position: relative;
     left: 100px;
     bottom: 16px;
@@ -439,14 +458,14 @@
     border-radius: 2px;
 }
 
-.pen{
-    background-color:rgb(255, 255, 255);
+.pen {
+    background-color: rgb(255, 255, 255);
     position: relative;
     left: 81.5px;
     bottom: 21px;
 }
 
-.mini__arr{
+.mini__arr {
     background-color: rgb(178, 206, 239);
     position: relative;
     left: 55px;
@@ -457,7 +476,7 @@
 
 /* ---------- CALENDAR - MONTH---------- */
 
-.calendar-month-container{
+.calendar-month-container {
     width: 355px;
     height: 345px;
     top: 679px;
@@ -467,22 +486,35 @@
     box-shadow: 0px 6px 10px 0px #B9B2E233;
     background-color: #FFFFFF;
     border-radius: 20px;
-    
+
 
 }
 
 .calendar-month {
-font-size: 20px;
-font-weight: 500;
-line-height: 30px;
-text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    margin: 23px 32px;
 
 }
 
-.calendar-month header {
-    position: relative;
+.calendar-month-header-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.calendar-month-header {
+    width: fit-content;
+    display: inline;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar-month-header-block .arrow {
+    width: fit-content;
+}
 
 .calendar-month tbody {
     color: #7c8a95;
@@ -502,22 +534,36 @@ text-align: left;
     font-weight: 400;
     line-height: 30px;
     color: #314068;
+}
 
-    }
-.day-of-week{
+.day-digit tr {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 279px;
+}
+
+.day-digit td {
+    display: flex;
+    width: 43px;
+    place-content: center;
+}
+
+.day-of-week {
     color: #3C3C434D;
-    width: 313px;
+    width: 279px;
     font-size: 13px;
     font-weight: 600;
     display: flex;
     justify-content: space-evenly;
 }
+
 .current-day {
     background: #00addf;
     color: #f9f9f9;
 }
 
-.calendar-month  .event {
+.calendar-month .event {
     cursor: pointer;
     position: relative;
 }
