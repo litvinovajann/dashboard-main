@@ -183,6 +183,12 @@
  width: 100%;
  padding: 30px 45px;
 }
+
+.dashboard-main .go-back-block {
+    display: flex;
+    align-items: baseline;
+}
+
 .dashboard-main .go-back {
     color: #3C6CA4;
     font-size: 30px;
@@ -190,6 +196,7 @@
     line-height: 45px;
     text-align: left;
     margin-bottom: 43px;
+    margin-left: 20px;
 }
 
 .main-h1 {
@@ -263,6 +270,189 @@
 
 }
 
+.calendar__time{
+    width: 495px;
+    height: 345px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.arrow{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.right__arrow{
+    background-color: rgb(255, 255, 255);
+    margin-right: 50px;
+}
+
+.left__arrow{
+    background-color: rgb(255, 255, 255);
+}
+
+.day{
+    width: 137px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 47px;
+    margin-top: 25px;
+    margin-bottom: 17px;
+}
+
+.left__arrow{
+    margin-right: 20px;
+}
+
+.time{
+    width: 40px;
+    height: 254px;
+    margin-left: 47px;
+}
+
+.time__list{
+    background-color: rgb(244, 248, 255);
+    list-style: none;
+    width: 49px;
+    height: 254px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    margin-left: 47px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.time__list__item{
+    color: rgb(60, 108, 164);
+    font-weight: 500;
+    font-size: 12px;
+    height: 15px;
+    background-color:rgb(244, 248, 255);
+    margin-top: 15px;
+
+}
+
+.line{
+    width: 311px;
+    height: 1px;
+    background-color: rgb(224, 233, 244);
+    border-radius: 1px;
+}
+
+.lines{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 190px;
+    position: relative;
+    left: 87px;
+    bottom: 240px;
+    width: 311px;
+    margin-left: 9px;
+}
+
+.wheel{
+    position: relative;
+    right: 48px;
+    top: 72px;
+}
+
+.notes{
+    background-color: rgb(178, 206, 239);
+}
+
+.the__note{
+    width: 135px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: rgb(178, 206, 239);
+    position: relative;
+}
+
+.note_block {
+    padding-top: 8px;
+    padding-left: 9px;
+}
+
+.first{
+    bottom: 455px;
+    left: 120px;
+}
+
+.second{
+    bottom: 419px;
+    left: 120px;
+}
+
+.thrid{
+    bottom: 380px;
+    left: 120px;
+}
+
+.name__note{
+    width: 76px;
+    height: 10px;
+    color: rgb(60, 108, 164);
+    font-size: 8px;
+    font-weight: 500;
+    background-color: rgb(178, 206, 239);
+}
+
+.time__note{
+    width: 76px;
+    height: 10px;
+    font-size: 6px;
+    font-weight: 400;
+    color: rgb(60, 108, 164);
+    background-color: rgb(178, 206, 239);
+}
+
+.Evaluation{
+    font-size: 8px;
+    font-weight: 600;
+    color: rgb(49, 64, 104);
+    background-color: rgb(178, 206, 239);
+    width: 44px;
+    height: 10px;  
+    margin-top: 8px; 
+}
+
+.Wbox{
+    position: relative;
+    left: 100px;
+    bottom: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+
+.pen{
+    background-color:rgb(255, 255, 255);
+    position: relative;
+    left: 81.5px;
+    bottom: 21px;
+}
+
+.mini__arr{
+    background-color: rgb(178, 206, 239);
+    position: relative;
+    left: 55px;
+    bottom: 20px;
+}
+
 
 
 /* ---------- CALENDAR - MONTH---------- */
@@ -308,9 +498,17 @@ text-align: left;
     display: inline-block;
     text-align: center;
     width: 32.95px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #314068;
 
     }
-
+.calendar-month .day-of-week{
+    color: #3C3C434D;
+    font-size: 13px;
+    font-weight: 600;
+}
 .current-day {
     background: #00addf;
     color: #f9f9f9;
@@ -326,5 +524,4 @@ text-align: left;
 .event.current-day:after {
     background: #f9f9f9;
 }
-
 
