@@ -211,15 +211,20 @@
     font-weight: 500;
     font-size: 14px;
     display: flex;
+    border-radius: 10px;
 }
 
 .upcoming-appointments-table-head td {
     padding: 20px 29px;
 }
 
+.upcoming-appointments-table-head td:nth-child(2) {
+    width: 40%;
+}
+
 .upcoming-appointments-actions {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .upcoming-appointments-actions p {
@@ -239,7 +244,6 @@ font-size: 12px;
 font-weight: 400;
 line-height: 18px;
 letter-spacing: 0%;
-text-align: center;
 width: 20%;
 }
 
@@ -249,8 +253,7 @@ font-size: 12px;
 font-weight: 500;
 line-height: 18px;
 letter-spacing: 0%;
-text-align: center;
-width: 20%;
+width: 40%;
 }
 
 .upcoming-appointments tbody {
@@ -264,6 +267,9 @@ width: 20%;
    align-items: center;
 }
 
+.upcoming-appointments tbody td {
+    padding: 20px 29px;
+}
 
 .view-more {
 color: rgb(60, 108, 164);
@@ -348,7 +354,6 @@ margin-left: 28px;
 
 .appointment-requests-block thead {
     border-radius: 10px;
-    background: rgb(244, 248, 255);
     color: rgb(60, 108, 164);
     font-family: Poppins;
     font-size: 14px;
@@ -356,6 +361,10 @@ margin-left: 28px;
     line-height: 21px;
     letter-spacing: 0%;
     text-align: left;
+    border-radius: 10px;
+    width: 427px;
+    border-radius: 10px;
+    background: rgb(244, 248, 255);
 }
 
 .appointment-requests-block__name {
@@ -627,7 +636,25 @@ text-align: left;
     line-height: 30px;
     text-align: left;
     margin: 23px 32px;
+}
 
+.calendar-month-container tr {
+    display: block;
+    text-align: center;
+}
+.calendar-month-container td {
+    width: 50px;
+    height: 40px;
+}
+
+.calendar-month-container tbody td {
+    color: rgb(49, 64, 104);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0px;
+text-align: center;
 }
 
 .calendar-month-header-block {
@@ -653,32 +680,9 @@ text-align: left;
 
 .calendar-month tbody td:hover {
     border: 2px solid #00addf;
-}
-
-.day-digit {
-    border: 2px solid transparent;
     border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    width: 32.95px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    color: #314068;
 }
 
-.day-digit tr {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 279px;
-}
-
-.day-digit td {
-    display: flex;
-    width: 43px;
-    place-content: center;
-}
 
 .day-of-week {
     color: #3C3C434D;
@@ -697,6 +701,8 @@ text-align: left;
 .calendar-month .event {
     cursor: pointer;
     position: relative;
+    border-radius: 22px;
+background: rgb(211, 230, 252);
 }
 
 
