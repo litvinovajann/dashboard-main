@@ -7,15 +7,18 @@
     box-sizing: border-box;
     border-spacing: 0;
 }
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: .5px;
-  }
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
-  }
+}
+
 .black {
     color: #000000;
 }
@@ -254,20 +257,20 @@
 
 .upcoming-appointments .time-td {
     color: rgb(88, 90, 91);
-font-size: 12px;
-font-weight: 400;
-line-height: 18px;
-letter-spacing: 0%;
-width: 20%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0%;
+    width: 20%;
 }
 
 .upcoming-appointments .name-td {
     color: rgb(0, 0, 0);
-font-size: 12px;
-font-weight: 500;
-line-height: 18px;
-letter-spacing: 0%;
-width: 40%;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    width: 40%;
 }
 
 .upcoming-appointments tbody {
@@ -276,9 +279,9 @@ width: 40%;
 }
 
 .upcoming-appointments tr {
-   width: 100%;
-   display: flex;
-   align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .upcoming-appointments tbody td {
@@ -286,15 +289,15 @@ width: 40%;
 }
 
 .view-more {
-color: rgb(60, 108, 164);
-font-family: Poppins;
-font-size: 14px;
-font-weight: 500;
-line-height: 21px;
-letter-spacing: 0%;
-text-align: left;
-text-decoration-line: underline;
-margin-left: 28px;
+    color: rgb(60, 108, 164);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-decoration-line: underline;
+    margin-left: 28px;
 }
 
 .dashboard-main {
@@ -307,6 +310,7 @@ margin-left: 28px;
 .dashboard-main .go-back-block {
     display: flex;
     align-items: baseline;
+    margin-top: 95px;
 }
 
 .dashboard-main .go-back {
@@ -397,11 +401,11 @@ margin-left: 28px;
 
 
 .appointment-requests-block__name span:nth-child(1) {
-color: rgb(30, 30, 30);
-font-size: 12px;
-font-weight: 500;
-line-height: 150%;
-text-align: left;
+    color: rgb(30, 30, 30);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+    text-align: left;
 }
 
 .appointment-requests-block__name span:nth-child(2) {
@@ -658,6 +662,7 @@ text-align: left;
     display: block;
     text-align: center;
 }
+
 .calendar-month-container td {
     width: 50px;
     height: 40px;
@@ -665,12 +670,12 @@ text-align: left;
 
 .calendar-month-container tbody td {
     color: rgb(49, 64, 104);
-font-family: Poppins;
-font-size: 20px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0px;
-text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .calendar-month-header-block {
@@ -695,7 +700,7 @@ text-align: center;
 }
 
 .calendar-month tbody td:hover {
-    border: 2px solid  rgb(49, 64, 104);
+    border: 2px solid rgb(49, 64, 104);
     border-radius: 50%;
 }
 
@@ -718,7 +723,7 @@ text-align: center;
     cursor: pointer;
     position: relative;
     border-radius: 22px;
-background: rgb(211, 230, 252);
+    background: rgb(211, 230, 252);
 }
 
 
@@ -730,6 +735,7 @@ background: rgb(211, 230, 252);
 .next-month {
     display: none;
 }
+
 div.menu-trigger {
     width: 50px;
     height: 50px;
@@ -739,7 +745,7 @@ div.menu-trigger {
 }
 
 
-section.side-menu.menu-active{
+section.side-menu.menu-active {
     position: absolute;
     height: calc(100vh - 90px);
     z-index: 100;
@@ -748,26 +754,31 @@ section.side-menu.menu-active{
 }
 
 @media only screen and (max-width: 1919px) {
+
     /* CSS rules for medium desktops and laptops */
-.dashbord-main-blocks {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .dashboard-main-block-one {
-    margin: 0 auto;
-  }
-  .appointment-requests {
-    margin-top: 37px;
-    width: 890px;
-}
-   div.appointment-requests-block > table {
-    width: 800px;
-   }
+    .dashbord-main-blocks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dashboard-main-block-one {
+        margin: 0 auto;
+    }
+
+    .appointment-requests {
+        margin-top: 37px;
+        width: 890px;
+    }
+
+    div.appointment-requests-block>table {
+        width: 800px;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1350px) {
+
     /* CSS rules for tablets */
     .side-menu {
         display: none;
@@ -781,12 +792,14 @@ section.side-menu.menu-active{
         display: block;
     }
 
-    section.side-menu.menu-active{
+    section.side-menu.menu-active {
         display: flex
     }
+
     div.calendar-month-container {
         margin: 37px auto;
     }
+
     .calendars-container {
         display: flex;
         flex-direction: column;
@@ -818,6 +831,7 @@ section.side-menu.menu-active{
     .upcoming-appointments-table-head td:nth-child(2) {
         width: fit-content;
     }
+
     .upcoming-appointments .name-td {
         width: fit-content;
     }
@@ -827,21 +841,26 @@ section.side-menu.menu-active{
     }
 
     .upcoming-appointments-actions p {
-       padding: 0;
+        padding: 0;
     }
 
-    div.appointment-requests-block > table {
+    div.appointment-requests-block>table {
         width: fit-content;
-       }
-  }
+    }
+}
 
-  @media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+
     /* CSS rules for smartphones */
+    .dashboard-main .go-back-block {
+        margin-top: 0;
+    }
 
     .dashboard-main-block-two {
         height: auto;
         margin: 37px 0;
     }
+
     .side-menu {
         display: none;
     }
@@ -854,9 +873,10 @@ section.side-menu.menu-active{
         display: block;
     }
 
-    section.side-menu.menu-active{
+    section.side-menu.menu-active {
         display: flex
     }
+
     .header-container {
         padding: 0;
     }
@@ -869,10 +889,12 @@ section.side-menu.menu-active{
         display: flex;
         flex-direction: column;
     }
+
     div.calendar-month-container {
         margin: auto;
-        width:  370px;
+        width: 370px;
     }
+
     .calendar-day-container {
         margin-bottom: 37px;
     }
@@ -881,11 +903,13 @@ section.side-menu.menu-active{
         width: fit-content;
         margin: 37px auto;
     }
+
     .calendar-time {
         width: 495px;
         height: 345px;
         border-radius: 20px;
     }
+
     .day {
         font-size: 16px;
     }
@@ -907,9 +931,9 @@ section.side-menu.menu-active{
         font-size: 16px;
     }
 
-    div.appointment-requests-block > table {
+    div.appointment-requests-block>table {
         width: fit-content;
-       }
+    }
 
     .upcoming-appointments {
         width: 370px;
@@ -918,14 +942,15 @@ section.side-menu.menu-active{
     }
 
     .upcoming-appointments-header {
-    
+
         font-size: 16px;
-    
+
     }
 
     .upcoming-appointments-table-head td:nth-child(2) {
         width: fit-content;
     }
+
     .upcoming-appointments .name-td {
         width: fit-content;
     }
@@ -945,7 +970,7 @@ section.side-menu.menu-active{
 
 
     .upcoming-appointments-actions p {
-       padding: 0;
+        padding: 0;
     }
 
     .view-more {
