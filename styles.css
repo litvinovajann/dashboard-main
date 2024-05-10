@@ -781,7 +781,49 @@ section.side-menu.menu-active{
     section.side-menu.menu-active{
         display: flex
     }
+    div.calendar-month-container {
+        margin: 37px auto;
+    }
+    .calendars-container {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .calendar-day-container {
+        margin-bottom: 37px;
+    }
+
+    .appointment-requests {
+        width: 500px;
+        height: fit-content;
+    }
+
+    .upcoming-appointments {
+        width: 500px;
+    }
+
+    .calendar-time {
+        width: 500px;
+    }
+
+    .calendar-month-container {
+        width: 500px;
+    }
+
+    .upcoming-appointments-table-head td:nth-child(2) {
+        width: fit-content;
+    }
+    .upcoming-appointments .name-td {
+        width: fit-content;
+    }
+
+    .upcoming-appointments table {
+        width: 100%;
+    }
+
+    .upcoming-appointments-actions p {
+       padding: 0;
+    }
   }
 
   @media only screen and (max-width: 767px) {
@@ -801,8 +843,79 @@ section.side-menu.menu-active{
     section.side-menu.menu-active{
         display: flex
     }
-
     .header-container {
         padding: 0;
     }
-  }
+
+    .dashboard-main {
+        padding: 0;
+    }
+
+    .calendars-container {
+        display: flex;
+        flex-direction: column;
+    }
+    div.calendar-month-container {
+        margin: auto;
+        width:  370px;
+    }
+    .calendar-day-container {
+        margin-bottom: 37px;
+    }
+
+    .calendar-day-container {
+        width: fit-content;
+    }
+
+    .day {
+        font-size: 16px;
+    }
+
+    .appointment-requests {
+        width: 370px;
+        height: fit-content;
+    }
+
+    .appointment-requests-header {
+        font-size: 16px;
+    }
+
+    .upcoming-appointments {
+        width: 370px;
+        margin: 37px 0;
+    }
+
+    .upcoming-appointments-header {
+    
+        font-size: 16px;
+    
+    }
+
+    .upcoming-appointments-table-head td:nth-child(2) {
+        width: fit-content;
+    }
+    .upcoming-appointments .name-td {
+        width: fit-content;
+    }
+
+    .upcoming-appointments table {
+        width: 100%;
+    }
+
+    .upcoming-appointments-actions p {
+       padding: 0;
+    }
+
+    .calendar-time {
+        width: 370px;
+        margin: 37px auto;
+    }
+
+    .calendar-month-header {
+        font-size: 16px;
+    }
+
+    .wheel {
+        top: 110px;
+    }
+}
