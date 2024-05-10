@@ -282,10 +282,19 @@
     width: 100%;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgb(224, 233, 244);
+}
+
+.upcoming-appointments tr:last-child {
+    border-bottom: 0;
 }
 
 .upcoming-appointments tbody td {
     padding: 20px 29px;
+}
+
+.upcoming-appointments tbody td:nth-child(3n) {
+    padding: 20px 10px 20px 29px;
 }
 
 .view-more {
@@ -392,11 +401,26 @@
     flex-direction: column;
 }
 
+.appointment-requests-block table {
+    border-collapse: collapse;
+}
+
+.appointment-requests-block table tbody tr {
+    border-bottom: 1px solid rgb(224, 233, 244);
+}
+
+.appointment-requests-block table tbody tr:last-child {
+    border-bottom: none;
+}
 
 .appointment-requests-block table td {
     text-align: left;
     padding: 20px 25px;
     width: 65%;
+}
+
+.appointment-requests_icons {
+    display: flex;
 }
 
 
@@ -856,9 +880,12 @@ section.side-menu.menu-active {
         margin-top: 0;
     }
 
+    .dashboard-main-blocks {
+        margin: 0 0 93px 0;
+    }
+
     .dashboard-main-block-two {
         height: auto;
-        margin: 37px 0;
     }
 
     .side-menu {
@@ -884,6 +911,12 @@ section.side-menu.menu-active {
     .dashboard-main {
         padding: 0;
     }
+
+
+    .dashbord-main-blocks {
+        margin: 0 0 93px 0;
+    }
+
 
     .calendars-container {
         display: flex;
