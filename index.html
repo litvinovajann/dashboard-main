@@ -14,7 +14,16 @@
     <div class="outer-wrap">
         <header class="site-header-sticky-wrapper">
             <div class="header-container">
-                <div class="logo-container"></div>
+                <div class="menu-trigger">
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12" id="id_101"></line><line x1="3" y1="6" x2="21" y2="6" id="id_102"></line><line x1="3" y1="18" x2="21" y2="18" id="id_103"></line></svg>
+
+                </div>
+                <div class="logo-container">
+
+                    
+                </div>
                 <div class="user-info">
                     <div class="user-info-text">
                         <div class="user-name">
@@ -1031,3 +1040,17 @@
 </body>
 
 </html>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sideMenu = document.querySelector('.side-menu');
+        const menuTrigger = document.querySelector('.menu-trigger');
+      
+        if (menuTrigger) {
+          menuTrigger.addEventListener('click', () => {
+            sideMenu.classList.toggle('menu-active');
+          });
+        }
+      });
+</script>
