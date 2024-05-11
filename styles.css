@@ -44,13 +44,13 @@
     position: relative;
 }
 
-.site-header-sticky-wrapper {
+.site-header{
     position: fixed;
     width: 100%;
     z-index: 100;
 }
 
-.header-container {
+.site-header__container {
     background-color: #314068;
     height: 93px;
     color: #FFFFFF;
@@ -61,7 +61,7 @@
     padding: 27px 57px;
 }
 
-.logo-container {
+.site-header__logo {
     width: 316px;
     height: 36.54px;
     background-image: url('assets/header-icons/logo.svg');
@@ -82,7 +82,7 @@
     align-items: center;
 }
 
-.user-email {
+.user-info__email{
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
@@ -91,7 +91,7 @@
 
 }
 
-.user-image {
+.user-info__image {
     background-image: url('assets/header-icons/profile.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -128,12 +128,12 @@
     padding-bottom: 41px;
 }
 
-.side-menu-items {
+.side-menu__items{
     display: flex;
     flex-direction: column;
 }
 
-.side-menu-item {
+.side-menu__item{
     font-size: 22px;
     font-weight: 400;
     display: flex;
@@ -151,7 +151,7 @@
     height: 62px;
 }
 
-.side-menu-item svg {
+.side-menu__item svg {
     width: 26.3px;
 }
 
@@ -165,7 +165,7 @@
     margin-right: 16px;
 }
 
-.side-menu-item.active {
+.side-menu__item.side-menu__item--active {
     color: #3C6CA4;
     font-weight: 600;
     line-height: 33px;
@@ -176,11 +176,11 @@
     background: rgba(233, 242, 255, 0.5);
 }
 
-.side-menu-item svg {
+.side-menu__item svg {
     margin-right: 44px;
 }
 
-.logout {
+.side-menu__logout {
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -189,7 +189,7 @@
     width: 146px;
 }
 
-.logout-pic {
+.side-menu__logout-pic {
     background-image: url('assets/dashboard-icons/logout.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -309,20 +309,20 @@
     margin-left: 28px;
 }
 
-.dashboard-main {
+.dashboard {
     width: 100%;
     padding: 30px 45px;
     overflow-y: scroll;
     height: 100vh;
 }
 
-.dashboard-main .go-back-block {
+.dashboard .dashboard__back {
     display: flex;
     align-items: baseline;
     margin-top: 95px;
 }
 
-.dashboard-main .go-back {
+.dashboard .dashboard__back-text {
     color: #3C6CA4;
     font-size: 30px;
     font-weight: 500;
@@ -340,7 +340,7 @@
     padding: 10px 20px;
 }
 
-.dashboard-main .go-back:hover {
+.dashboard .dashboard__back-text:hover {
     cursor: pointer;
 }
 
@@ -876,7 +876,7 @@ section.side-menu.menu-active {
 @media only screen and (max-width: 767px) {
 
     /* CSS rules for smartphones */
-    .dashboard-main .go-back-block {
+    .dashboard .dashboard__back {
         margin-top: 0;
     }
 
@@ -908,7 +908,7 @@ section.side-menu.menu-active {
         padding: 0;
     }
 
-    .dashboard-main {
+    .dashboard {
         padding: 0;
     }
 
